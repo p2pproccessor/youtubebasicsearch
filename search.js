@@ -79,7 +79,8 @@ function showResults(results) {
         var aciklama = value.snippet.description;
         var kanal = value.snippet.channelTitle;
         var tarih = value.snippet.publishedAt;
-        var resim_h = value.snippet.thumbnails.high.url;
+        var resim_m = value.snippet.thumbnails.medium.url;
+
         var videoId = value.id.videoId;
         
         // burada foreach dönmeye devam ettikçe html değişkenimize yeni kayıtları da ekliyoruz
@@ -88,7 +89,7 @@ function showResults(results) {
         html += 'aciklama: ' + aciklama + '<br>';
         html += 'kanal: ' + kanal + '<br>';
         html += 'tarih: ' + tarih + '<br>';
-        html += '<img src="' + resim_h + '"><br><hr>';
+        html += '<img src="' + resim_m + '">';
         
     }); 
     
