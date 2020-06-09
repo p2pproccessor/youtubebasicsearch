@@ -84,8 +84,8 @@ function showResults(results) {
         var videoId = value.id.videoId;
         
         // burada foreach dönmeye devam ettikçe html değişkenimize yeni kayıtları da ekliyoruz
-        html += '<a href="https://www.youtube.com/embed/' + videoId + '?autoplay=1" </a> <br>';
-		html += 'baslik: ' + baslik + '<br>';
+        html += '<a href="https://www.youtube.com/embed/' + videoId + '?autoplay=1" target="blank"</a> <br>';
+	html += 'baslik: ' + baslik + '<br>';
         html += 'aciklama: ' + aciklama + '<br>';
         html += 'kanal: ' + kanal + '<br>';
         html += 'tarih: ' + tarih + '<br>';
